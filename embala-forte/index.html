@@ -1,0 +1,728 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Embala Forte · Embalagens para negócios em Nova Iguaçu</title>
+<meta name="description" content="Caixas para pizza, bolo e salgados, maletas, embalagens sob medida, plástico-bolha e filme stretch. Monte sua consulta e fale com a Embala Forte.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --preto:#151515; --amarelo:#F3C51B; --vermelho:#D62B29;
+  --branco:#FFFDF6; --cinza:#ECEBE5; --linha:rgba(21,21,21,.1);
+  --suave:#55534d; --raio:10px;
+  --titulo:"Archivo","Arial Black",Arial,sans-serif;
+  --corpo:"Inter",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{font:400 16px/1.5 var(--corpo);color:var(--preto);background:var(--branco);overflow-x:hidden}
+img,svg{display:block;max-width:100%}
+button,input{font:inherit;color:inherit}
+button{cursor:pointer}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--preto);outline-offset:2px;box-shadow:0 0 0 6px var(--amarelo)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+section{padding:64px 0}
+.alt{background:var(--cinza)}
+.rotulo{font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--suave)}
+h1,h2,h3{font-family:var(--titulo);font-weight:800;line-height:1.1;letter-spacing:-.01em}
+h1{font-size:40px}
+h2{font-size:28px;margin:8px 0 8px}
+.intro{color:var(--suave);max-width:560px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 20px;border-radius:var(--raio);border:1px solid var(--preto);background:transparent;font-weight:600;text-decoration:none;font-size:16px}
+.btn-pri{background:var(--amarelo);border-color:var(--amarelo);color:var(--preto)}
+.btn-pri:hover{background:#e6b80f;border-color:#e6b80f}
+.btn-claro{border-color:rgba(255,253,246,.4);color:var(--branco)}
+
+/* topo */
+.topo{position:sticky;top:0;z-index:30;background:var(--branco);border-bottom:1px solid var(--linha)}
+.topo .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo-ico{width:36px;height:36px;border-radius:8px;background:var(--preto);display:grid;place-items:center;flex:none}
+.logo-txt{font-family:var(--titulo);font-weight:800;font-size:18px;letter-spacing:.02em;line-height:1}
+.logo-txt b{color:var(--vermelho);font-weight:800}
+.logo-txt small{display:block;font-family:var(--corpo);font-size:10px;font-weight:600;letter-spacing:.18em;color:var(--suave);margin-top:3px}
+.btn-consulta{min-height:44px;padding:0 12px 0 14px;gap:8px}
+.contador{min-width:24px;height:24px;border-radius:6px;background:var(--amarelo);display:grid;place-items:center;font-size:13px;font-weight:600;padding:0 6px}
+.contador.zero{background:var(--cinza)}
+.pulse{animation:pulse .4s ease}
+@keyframes pulse{50%{transform:scale(1.25)}}
+
+/* hero */
+.hero{padding:40px 0 56px}
+.hero h1{margin:12px 0 16px;max-width:620px}
+.hero p.apoio{font-size:16px;color:var(--suave);max-width:520px;margin-bottom:24px}
+.hero-acoes{display:flex;flex-wrap:wrap;gap:12px}
+.hero-fotos{margin-top:32px;display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.hero-fotos img{width:100%;height:100%;object-fit:cover;border-radius:var(--raio);border:1px solid var(--linha);background:var(--cinza);aspect-ratio:600/511}
+.hero-fotos .larga{grid-column:span 2;aspect-ratio:1080/400}
+.selos{display:grid;grid-template-columns:repeat(3,1fr);margin-top:16px;border:1px solid var(--linha);border-radius:var(--raio);background:var(--branco)}
+.selos div{padding:14px 8px;text-align:center;font-size:13px;font-weight:600;line-height:1.3}
+.selos div+div{border-left:1px solid var(--linha)}
+.selos svg{margin:0 auto 6px}
+
+/* vitrine */
+.abas{position:sticky;top:64px;z-index:20;background:var(--cinza);margin:24px -20px 20px;padding:10px 20px;display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;border-bottom:1px solid var(--linha)}
+.abas::-webkit-scrollbar{display:none}
+.aba{flex:none;min-height:40px;padding:0 14px;border-radius:var(--raio);border:1px solid var(--linha);background:var(--branco);font-size:14px;font-weight:500}
+.aba[aria-pressed="true"]{background:var(--amarelo);border-color:var(--amarelo);font-weight:600}
+.grade{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.card{display:flex;flex-direction:column;background:var(--branco);border:1px solid var(--linha);border-radius:var(--raio);overflow:hidden}
+.card[hidden]{display:none}
+.card .foto{aspect-ratio:1;background:#e2e0d8;overflow:hidden}
+.card .foto img,.card .foto svg{width:100%;height:100%;object-fit:cover}
+.card .info{padding:12px;display:flex;flex-direction:column;flex:1}
+.card .cat{font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--suave)}
+.card h3{font-family:var(--corpo);font-weight:600;font-size:15px;line-height:1.3;margin:4px 0;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:2.6em}
+.card p{font-size:13px;color:var(--suave);line-height:1.4;margin-bottom:12px}
+.card .incluir{margin-top:auto;width:100%;min-height:44px;padding:0 4px;font-size:13px;white-space:nowrap}
+.ver-marca{display:block;font-size:13px;font-weight:600;margin:-4px 0 12px;padding:4px 0;text-underline-offset:3px}
+.card .incluir[aria-pressed="true"]{background:var(--preto);border-color:var(--preto);color:var(--branco)}
+
+/* simulador */
+.escuro{background:var(--preto);color:var(--branco)}
+.escuro .rotulo,.escuro .intro{color:#bdbab1}
+.sim{display:grid;gap:24px;margin-top:24px}
+.palco{background:#202020;border:1px solid rgba(255,253,246,.1);border-radius:var(--raio);padding:12px}
+.palco svg{width:100%;height:auto;user-select:none;-webkit-user-select:none}
+.logo-campo{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.logo-btn{position:relative;display:inline-flex;align-items:center;gap:8px;min-height:48px;padding:0 16px;border-radius:var(--raio);border:1px dashed rgba(255,253,246,.45);color:var(--branco);font-weight:500;font-size:14px;cursor:pointer}
+.logo-btn input{position:absolute;inset:0;opacity:0;cursor:pointer;width:100%}
+.logo-btn:focus-within{outline:3px solid var(--amarelo);outline-offset:2px}
+.logo-prev{display:none;align-items:center;gap:8px;font-size:14px}
+.logo-prev.on{display:flex}
+.logo-prev img{width:48px;height:48px;object-fit:contain;background:var(--branco);border-radius:8px;padding:4px}
+.logo-prev button{min-height:40px;padding:0 12px;border-radius:8px;border:1px solid rgba(255,253,246,.35);background:transparent;color:var(--branco);font-size:13px}
+.palco .obs{font-size:12px;color:#a9a69d;text-align:center;margin-top:4px}
+.campo{margin-bottom:20px}
+.campo>label,.campo>.leg{display:block;font-size:14px;font-weight:600;margin-bottom:8px}
+.tipos{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
+.tipo{min-height:52px;border-radius:var(--raio);border:1px solid rgba(255,253,246,.25);background:transparent;color:var(--branco);font-weight:500}
+.tipo[aria-pressed="true"]{background:var(--amarelo);border-color:var(--amarelo);color:var(--preto);font-weight:600}
+.entrada{width:100%;min-height:48px;padding:0 14px;border-radius:var(--raio);border:1px solid var(--linha);background:var(--branco);color:var(--preto);font-size:16px}
+.escuro .entrada{border-color:transparent}
+.cores{display:flex;flex-wrap:wrap;gap:10px}
+.cor{width:44px;height:44px;border-radius:50%;border:2px solid rgba(255,253,246,.35);position:relative;padding:0}
+.cor[aria-pressed="true"]{border:3px solid var(--amarelo);box-shadow:inset 0 0 0 3px var(--preto)}
+.cor[aria-pressed="true"]::after{content:attr(data-n);position:absolute;top:-6px;right:-6px;width:20px;height:20px;border-radius:6px;background:var(--amarelo);color:var(--preto);font-size:12px;font-weight:600;display:grid;place-items:center}
+.sem-imp{min-height:44px;padding:0 14px;border-radius:var(--raio);border:1px solid rgba(255,253,246,.35);background:transparent;color:var(--branco);font-size:14px;font-weight:500}
+.sem-imp[aria-pressed="true"]{background:var(--amarelo);border-color:var(--amarelo);color:var(--preto);font-weight:600}
+.dica{font-size:13px;color:#a9a69d;margin-top:8px}
+.sim .btn-pri{width:100%;min-height:52px}
+
+/* como funciona */
+.passos{display:grid;gap:12px;margin-top:24px;counter-reset:p}
+.passo{border:1px solid var(--linha);border-radius:var(--raio);padding:20px;background:var(--branco);display:grid;grid-template-columns:auto 1fr;gap:4px 16px;align-items:start}
+.passo .num{font-family:var(--titulo);font-weight:800;font-size:40px;line-height:1;grid-row:span 2}
+.passo:nth-child(2) .num{color:var(--vermelho)}
+.passo h3{font-family:var(--corpo);font-weight:600;font-size:16px}
+.passo p{font-size:14px;color:var(--suave)}
+
+/* diferenciais */
+.difs{display:grid;gap:12px;margin-top:24px}
+.dif{display:flex;gap:14px;align-items:flex-start;padding:16px 0;border-top:1px solid var(--linha)}
+.dif .ic{width:44px;height:44px;border-radius:var(--raio);background:var(--preto);display:grid;place-items:center;flex:none}
+.dif h3{font-family:var(--corpo);font-weight:600;font-size:16px}
+.dif p{font-size:14px;color:var(--suave)}
+
+/* endereço + cta */
+.end{display:grid;gap:16px;margin-top:24px}
+.end-box{border:1px solid var(--linha);border-radius:var(--raio);padding:20px;background:var(--branco)}
+.end-box strong{display:block;font-size:16px;margin-bottom:4px}
+.end-box p{font-size:14px;color:var(--suave)}
+.end-box .btn{margin-top:16px;width:100%}
+.cta{background:var(--preto);color:var(--branco);border-radius:var(--raio);padding:32px 20px;margin-top:40px}
+.cta h2{max-width:520px}
+.cta p{color:#bdbab1;margin-bottom:20px}
+.cta .btn-pri{width:100%;max-width:360px;min-height:52px}
+footer{border-top:1px solid var(--linha);padding:24px 0 96px;font-size:13px;color:var(--suave)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
+
+/* painel */
+.veu{position:fixed;inset:0;background:rgba(21,21,21,.55);z-index:40;opacity:0;pointer-events:none;transition:opacity .2s}
+.veu.on{opacity:1;pointer-events:auto}
+.painel{position:fixed;left:0;right:0;bottom:0;z-index:50;background:var(--branco);border-radius:16px 16px 0 0;max-height:90vh;max-height:90dvh;display:flex;flex-direction:column;transform:translateY(105%);transition:transform .25s ease;visibility:hidden}
+.painel.on{transform:none;visibility:visible}
+.painel-cab{display:flex;align-items:center;justify-content:space-between;padding:16px 20px;border-bottom:1px solid var(--linha)}
+.painel-cab h2{font-size:20px;margin:0}
+.fechar{width:44px;height:44px;border-radius:var(--raio);border:1px solid var(--linha);background:transparent;display:grid;place-items:center}
+.painel-corpo{overflow-y:auto;padding:16px 20px 8px;flex:1}
+.painel-pe{padding:12px 20px 20px;border-top:1px solid var(--linha)}
+.vazio{font-size:14px;color:var(--suave);padding:12px;border:1px dashed rgba(21,21,21,.25);border-radius:var(--raio);margin-bottom:16px}
+.itens{list-style:none;padding:0;margin-bottom:20px}
+.item{display:grid;grid-template-columns:48px 1fr auto;gap:12px;align-items:center;padding:10px 0;border-bottom:1px solid var(--linha)}
+.item .mini{width:48px;height:48px;border-radius:8px;overflow:hidden;background:var(--cinza)}
+.item .mini img,.item .mini svg{width:100%;height:100%;object-fit:cover}
+.item .nome{font-size:14px;font-weight:600;line-height:1.3}
+.item label{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--suave);margin-top:6px}
+.item input{width:110px;min-height:40px;padding:0 10px;border-radius:8px;border:1px solid rgba(21,21,21,.25);background:#fff;font-size:16px}
+.remover{width:44px;height:44px;border-radius:var(--raio);border:1px solid var(--linha);background:transparent;display:grid;place-items:center}
+.painel .campo>label,.painel .campo>.leg{font-size:14px}
+.painel .entrada{border-color:rgba(21,21,21,.25);background:#fff}
+.check{display:flex;align-items:center;gap:10px;margin-top:10px;font-size:14px;min-height:44px}
+.check input{width:22px;height:22px;accent-color:var(--preto)}
+.opcoes{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.opcoes label{position:relative}
+.opcoes input{position:absolute;opacity:0}
+.opcoes span{display:grid;place-items:center;min-height:44px;border:1px solid rgba(21,21,21,.25);border-radius:var(--raio);font-size:14px;font-weight:500;text-align:center;padding:0 4px}
+.opcoes input:checked+span{background:var(--amarelo);border-color:var(--amarelo);font-weight:600}
+.opcoes input:focus-visible+span{outline:3px solid var(--preto);outline-offset:2px}
+.simcard{display:grid;grid-template-columns:72px 1fr auto;gap:12px;align-items:center;padding:10px;border:1px solid var(--linha);border-radius:var(--raio);margin-bottom:20px;background:var(--cinza)}
+.simcard>svg{width:72px;height:60px}
+.simcard .nome{font-size:14px;font-weight:600}
+.simcard small{display:block;font-size:13px;color:var(--suave)}
+.aviso{font-size:12px;color:var(--suave);margin-bottom:10px;line-height:1.4}
+.btn-wa{width:100%;min-height:52px;font-size:15px;white-space:nowrap;padding:0 12px}
+.toast{position:fixed;left:50%;bottom:20px;transform:translate(-50%,140%);z-index:35;background:var(--preto);color:var(--branco);border-radius:var(--raio);padding:10px 10px 10px 16px;display:flex;align-items:center;gap:12px;font-size:14px;width:calc(100% - 40px);max-width:420px;transition:transform .25s ease}
+.toast.on{transform:translate(-50%,0)}
+.toast span{flex:1}
+.toast button{min-height:40px;padding:0 12px;border-radius:8px;border:0;background:var(--amarelo);color:var(--preto);font-weight:600;font-size:14px}
+
+@media (min-width:760px){
+  h1{font-size:48px}
+  h2{font-size:40px}
+  .hero .wrap{display:grid;grid-template-columns:1.05fr 1fr;gap:48px;align-items:center}
+  .hero-fotos{margin-top:0}
+  .abas{margin:24px 0 24px;border-radius:var(--raio);border:1px solid var(--linha)}
+  .grade{grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+  .sim{grid-template-columns:1.1fr 1fr;align-items:start;gap:40px}
+  .passos{grid-template-columns:repeat(3,1fr)}
+  .passo{grid-template-columns:1fr}
+  .passo .num{grid-row:auto;margin-bottom:8px}
+  .difs{grid-template-columns:repeat(3,1fr);gap:24px}
+  .end{grid-template-columns:1fr 1fr}
+  .cta{padding:48px}
+  .painel{left:auto;top:0;width:440px;max-height:none;border-radius:0;transform:translateX(105%)}
+  footer{padding-bottom:32px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-caixa" viewBox="0 0 24 24"><path d="M12 2.5 21 7v10l-9 4.5L3 17V7z" fill="#F3C51B"/><path d="M3 7l9 4.5L21 7M12 11.5v10" stroke="#151515" stroke-width="1.6" fill="none"/></symbol>
+  <symbol id="i-wa" viewBox="0 0 24 24"><path d="M12 2.2a9.8 9.8 0 0 0-8.4 14.8L2.3 21.8l4.9-1.3A9.8 9.8 0 1 0 12 2.2z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8.6 7.4c.3-.3.7-.3.9 0l1.1 1.6c.2.3.2.6 0 .9l-.6.7c.6 1.3 1.6 2.3 2.9 2.9l.7-.6c.3-.2.6-.2.9 0l1.6 1.1c.3.2.3.6 0 .9l-.8.9c-.5.5-1.2.6-1.9.4-2.8-1-5-3.2-6-6-.2-.7-.1-1.4.4-1.9z" fill="currentColor"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="i-lixo" viewBox="0 0 24 24"><path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+</svg>
+
+<header class="topo">
+  <div class="wrap">
+    <a class="logo" href="#inicio" aria-label="Embala Forte, início">
+      <span class="logo-ico"><svg width="22" height="22"><use href="#i-caixa"/></svg></span>
+      <span class="logo-txt">EMBALA <b>FORTE</b><small>EMBALAGENS</small></span>
+    </a>
+    <button class="btn btn-consulta" id="abrirPainel" aria-haspopup="dialog" aria-controls="painel">Consulta <span class="contador zero" id="contador" aria-label="0 itens">0</span></button>
+  </div>
+</header>
+
+<main id="inicio">
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <p class="rotulo">Nova Iguaçu · Embalagens para negócios</p>
+        <h1>Proteja seu produto. Apresente sua marca.</h1>
+        <p class="apoio">Caixas para pizza, bolo e salgados, maletas, sob medida e materiais de proteção para o seu negócio. Escolha, simule e peça seu orçamento.</p>
+        <div class="hero-acoes">
+          <a class="btn btn-pri" href="#vitrine">Montar minha consulta</a>
+          <a class="btn" href="#simulador">Ver minha marca na caixa</a>
+        </div>
+      </div>
+      <div>
+        <div class="hero-fotos">
+          <img class="larga" src="img/galpao.jpg" alt="Galpão da Embala Forte com paletes de papelão empilhados nas prateleiras" width="1080" height="400" fetchpriority="high">
+          <img src="img/estoque.jpg" alt="Estoque de chapas de papelão em paletes" width="600" height="511">
+          <img src="img/carga.jpg" alt="Caixas sendo carregadas em um caminhão de entrega" width="600" height="511">
+        </div>
+        <div class="selos">
+          <div><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#151515" stroke-width="1.8"><path d="M3 8h18M3 8v11h18V8M7 8V5M17 8V5M3 13h4M17 13h4"/></svg>Sob medida</div>
+          <div><svg width="22" height="22" viewBox="0 0 24 24"><circle cx="8" cy="9" r="4.5" fill="#151515"/><circle cx="16" cy="9" r="4.5" fill="#F3C51B" stroke="#151515" stroke-width="1.2"/><circle cx="12" cy="16" r="4.5" fill="#D62B29"/></svg>Até 3 cores</div>
+          <div><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#151515" stroke-width="1.8"><path d="M2 6h12v10H2zM14 10h4l3 3v3h-7"/><circle cx="6" cy="18" r="2" fill="#FFFDF6"/><circle cx="17" cy="18" r="2" fill="#FFFDF6"/></svg>Retirada ou entrega</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt" id="vitrine">
+    <div class="wrap">
+      <p class="rotulo">Soluções para o seu negócio</p>
+      <h2>Escolha o que você precisa embalar</h2>
+      <p class="intro">Toque em “Incluir na consulta” e monte o pedido de orçamento com quantidade e medidas.</p>
+      <div class="abas" role="toolbar" aria-label="Filtrar por categoria" id="abas"></div>
+      <div class="grade" id="grade"></div>
+    </div>
+  </section>
+
+  <section class="escuro" id="simulador">
+    <div class="wrap">
+      <p class="rotulo">Sua marca em evidência</p>
+      <h2>Veja sua marca na caixa</h2>
+      <p class="intro">Escolha o tipo, escreva o nome e até 3 cores. A caixa muda na hora.</p>
+      <div class="sim">
+        <div class="palco">
+          <svg id="caixaSvg" viewBox="0 0 400 320" role="img" aria-label="Simulação da caixa com o nome da marca"></svg>
+          <p class="obs">Simulação visual, sem escala.</p>
+        </div>
+        <div>
+          <div class="campo">
+            <span class="leg" id="legTipo">Tipo de caixa</span>
+            <div class="tipos" role="group" aria-labelledby="legTipo" id="tipos"></div>
+          </div>
+          <div class="campo">
+            <label for="nomeMarca">Nome da sua marca</label>
+            <input class="entrada" id="nomeMarca" maxlength="22" value="Sua Pizzaria" autocomplete="off">
+          </div>
+          <div class="campo">
+            <span class="leg" id="legCores">Cores da impressão <span id="qtdCores" style="font-weight:400;color:#a9a69d"></span></span>
+            <div class="cores" role="group" aria-labelledby="legCores" id="cores"></div>
+            <p class="dica" id="dicaCores">A primeira cor vai no nome, a segunda na faixa e a terceira no selo.</p>
+          </div>
+          <div class="campo">
+            <span class="leg">Sua logo (opcional)</span>
+            <div class="logo-campo">
+              <label class="logo-btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 16V4M7 9l5-5 5 5M4 20h16"/></svg><span id="logoTxt">Usar minha logo</span><input type="file" id="logoArq" accept="image/png,image/jpeg,image/webp,image/svg+xml"></label>
+              <div class="logo-prev" id="logoPrev"><img id="logoMini" alt="Sua logo"><button id="logoRem">Remover</button></div>
+            </div>
+            <p class="dica">A logo fica só no seu aparelho, não é enviada. PNG com fundo transparente fica melhor.</p>
+          </div>
+          <button class="btn btn-pri" id="incluirSim">Incluir no orçamento</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap">
+      <p class="rotulo">Como funciona</p>
+      <h2>Do pedido ao orçamento</h2>
+      <div class="passos">
+        <div class="passo"><span class="num">1</span><h3>Escolha a solução</h3><p>Inclua as embalagens e, se quiser, simule sua marca na caixa.</p></div>
+        <div class="passo"><span class="num">2</span><h3>Envie sua consulta</h3><p>Tudo vai organizado no WhatsApp: tipo, quantidade, medidas e cores.</p></div>
+        <div class="passo"><span class="num">3</span><h3>Receba a confirmação</h3><p>A equipe confirma medida, quantidade mínima, material, prazo e preço.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <p class="rotulo">Por que a Embala Forte</p>
+      <h2>Precisou embalar? Vem pra Embala Forte.</h2>
+      <div class="difs">
+        <div class="dif"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F3C51B" stroke-width="1.8"><path d="M3 8h18M3 8v11h18V8M7 8V5M17 8V5"/></svg></span><div><h3>Embalagens sob medida</h3><p>Para produtos com tamanho específico, do jeito que o seu negócio precisa.</p></div></div>
+        <div class="dif"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F3C51B" stroke-width="1.8"><circle cx="8" cy="9" r="4.5"/><circle cx="16" cy="9" r="4.5"/><circle cx="12" cy="16" r="4.5"/></svg></span><div><h3>Personalizamos em até 3 cores</h3><p>Sua marca em evidência em cada entrega.</p></div></div>
+        <div class="dif"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F3C51B" stroke-width="1.8"><path d="M2 6h12v10H2zM14 10h4l3 3v3h-7"/><circle cx="6" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg></span><div><h3>Retirada ou entrega</h3><p>Combine com a equipe a melhor forma de receber seu pedido.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt" id="contato">
+    <div class="wrap">
+      <p class="rotulo">Onde estamos</p>
+      <h2>Fábrica em Nova Iguaçu</h2>
+      <div class="end">
+        <div class="end-box">
+          <strong>Rua Aquiles Coutinho, 66</strong>
+          <p>Parque do Laranjal, Nova Iguaçu, RJ</p>
+          <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Rua%20Aquiles%20Coutinho%2066%20Nova%20Igua%C3%A7u%20RJ" target="_blank" rel="noopener">Abrir no mapa</a>
+        </div>
+        <div class="end-box">
+          <strong>@fabricaembalaforte</strong>
+          <p>Novidades, modelos e soluções no Instagram.</p>
+          <a class="btn" href="https://www.instagram.com/fabricaembalaforte/" target="_blank" rel="noopener">Ver Instagram</a>
+        </div>
+      </div>
+      <div class="cta">
+        <p class="rotulo">Orçamento sem compromisso</p>
+        <h2>Conte o que você precisa embalar</h2>
+        <p>Monte a consulta em 1 minuto. A equipe responde com as condições.</p>
+        <button class="btn btn-pri" data-abrir>Montar minha consulta</button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Embala Forte · Embalagens para negócios · Nova Iguaçu, RJ</span>
+    <span>Prévia ilustrativa criada por Nicolas</span>
+  </div>
+</footer>
+
+<div class="veu" id="veu"></div>
+<aside class="painel" id="painel" role="dialog" aria-modal="true" aria-labelledby="tituloPainel" aria-hidden="true">
+  <div class="painel-cab">
+    <h2 id="tituloPainel">Sua consulta</h2>
+    <button class="fechar" id="fecharPainel" aria-label="Fechar consulta"><svg width="20" height="20"><use href="#i-x"/></svg></button>
+  </div>
+  <div class="painel-corpo">
+    <div id="listaWrap"></div>
+    <div id="simWrap"></div>
+    <div class="campo">
+      <label for="medidas">Medidas (opcional)</label>
+      <input class="entrada" id="medidas" placeholder="Ex.: 35 x 35 x 5 cm" autocomplete="off">
+      <label class="check"><input type="checkbox" id="semMedidas"> Ainda não sei as medidas</label>
+    </div>
+    <div class="campo">
+      <span class="leg" id="legRec">Como prefere receber</span>
+      <div class="opcoes" role="radiogroup" aria-labelledby="legRec">
+        <label><input type="radio" name="rec" value="retirada"><span>Retirada</span></label>
+        <label><input type="radio" name="rec" value="entrega"><span>Entrega</span></label>
+        <label><input type="radio" name="rec" value="consultar" checked><span>A consultar</span></label>
+      </div>
+    </div>
+  </div>
+  <div class="painel-pe">
+    <p class="aviso">Orçamento sob consulta: medidas, quantidade mínima, material, prazo e condições são confirmados pela equipe.</p>
+    <button class="btn btn-pri btn-wa" id="enviarWa"><svg width="22" height="22"><use href="#i-wa"/></svg>Consultar meu projeto no WhatsApp</button>
+  </div>
+</aside>
+
+<div class="toast" id="toast" role="status" aria-live="polite"><span id="toastTxt"></span><button id="toastVer">Ver consulta</button></div>
+
+<script>
+(function(){
+"use strict";
+var WA = "5500000000000"; // número de exemplo: Nicolas troca depois de confirmar o canal
+
+/* ---------- ilustrações (produtos sem foto boa no perfil) ---------- */
+var K = "#D9B98F", KD = "#C29E70", P = "#151515", A = "#F3C51B";
+var ILU = {
+  laminada: '<svg viewBox="0 0 200 200"><rect width="200" height="200" fill="#E2E0D8"/><ellipse cx="100" cy="160" rx="72" ry="10" fill="#151515" opacity=".12"/><path d="M28 118 100 150 172 118 100 86z" fill="'+K+'" stroke="'+P+'" stroke-width="2.5" stroke-linejoin="round"/><path d="M28 118v12l72 32 72-32v-12" fill="'+KD+'" stroke="'+P+'" stroke-width="2.5" stroke-linejoin="round"/><path d="M100 160v-10" stroke="'+P+'" stroke-width="2.5"/><path d="M44 118 100 143 156 118 100 93z" fill="#C9CDD2" stroke="'+P+'" stroke-width="1.5"/><path d="M60 116l40 18M80 108l40 18M70 124l18-8M108 105l22 10" stroke="#fff" stroke-width="3" opacity=".7"/><path d="M28 118 100 86 100 30 28 62z" fill="'+K+'" stroke="'+P+'" stroke-width="2.5" stroke-linejoin="round"/><path d="M48 70l32-14" stroke="'+A+'" stroke-width="6" stroke-linecap="round"/></svg>',
+  salgados: '<svg viewBox="0 0 200 200"><rect width="200" height="200" fill="#E2E0D8"/><ellipse cx="100" cy="164" rx="70" ry="9" fill="#151515" opacity=".12"/><path d="M36 90 100 120 164 90 100 60z" fill="'+K+'" stroke="'+P+'" stroke-width="2.5" stroke-linejoin="round"/><path d="M36 90v50l64 30V120z" fill="'+KD+'" stroke="'+P+'" stroke-width="2.5" stroke-linejoin="round"/><path d="M164 90v50l-64 30V120z" fill="#CDAA7E" stroke="'+P+'" stroke-width="2.5" stroke-linejoin="round"/><path d="M70 90 100 104 130 90 100 76z" fill="#F4EBDD" stroke="'+P+'" stroke-width="2"/><circle cx="92" cy="90" r="5" fill="#E0A458"/><circle cx="104" cy="94" r="5" fill="#E0A458"/><circle cx="108" cy="85" r="5" fill="#E0A458"/><path d="M118 150l30-14" stroke="'+A+'" stroke-width="6" stroke-linecap="round"/></svg>',
+  bolha: '<svg viewBox="0 0 200 200"><rect width="200" height="200" fill="#E2E0D8"/><ellipse cx="100" cy="166" rx="74" ry="9" fill="#151515" opacity=".12"/><path d="M40 70h110v86H40z" fill="#EAF2F4" stroke="'+P+'" stroke-width="2.5"/><ellipse cx="150" cy="113" rx="16" ry="43" fill="#DCE8EB" stroke="'+P+'" stroke-width="2.5"/><ellipse cx="150" cy="113" rx="6" ry="16" fill="'+A+'" stroke="'+P+'" stroke-width="2"/><ellipse cx="40" cy="113" rx="16" ry="43" fill="#EAF2F4" stroke="'+P+'" stroke-width="2.5"/><g fill="none" stroke="#8FA9B0" stroke-width="2"><circle cx="64" cy="88" r="7"/><circle cx="86" cy="88" r="7"/><circle cx="108" cy="88" r="7"/><circle cx="75" cy="108" r="7"/><circle cx="97" cy="108" r="7"/><circle cx="119" cy="108" r="7"/><circle cx="64" cy="128" r="7"/><circle cx="86" cy="128" r="7"/><circle cx="108" cy="128" r="7"/><circle cx="130" cy="128" r="7"/><circle cx="130" cy="88" r="7"/></g></svg>',
+  stretch: '<svg viewBox="0 0 200 200"><rect width="200" height="200" fill="#E2E0D8"/><ellipse cx="100" cy="168" rx="60" ry="9" fill="#151515" opacity=".12"/><rect x="62" y="40" width="76" height="124" rx="4" fill="#E6EEF0" stroke="'+P+'" stroke-width="2.5"/><path d="M62 60h76M62 144h76" stroke="'+P+'" stroke-width="1.5" opacity=".35"/><path d="M76 48v108M90 46v112" stroke="#fff" stroke-width="5" opacity=".9"/><rect x="88" y="26" width="24" height="16" rx="3" fill="'+A+'" stroke="'+P+'" stroke-width="2.5"/><rect x="88" y="162" width="24" height="12" rx="3" fill="'+A+'" stroke="'+P+'" stroke-width="2.5"/><path d="M138 70c20 4 30 10 34 22" fill="none" stroke="#9DB3B9" stroke-width="2.5"/></svg>'
+};
+
+var CATS = [
+  {id:"todas", nome:"Todas"},
+  {id:"pizza", nome:"Pizza e delivery"},
+  {id:"confeitaria", nome:"Confeitaria"},
+  {id:"protecao", nome:"Proteção e transporte"},
+  {id:"personalizadas", nome:"Personalizadas"}
+];
+var PRODUTOS = [
+  {id:"pizza-pers", nome:"Caixa de pizza personalizada", cat:"pizza", cats:["pizza","personalizadas"], desc:"Sua marca em até 3 cores", sim:"pizza", img:"img/pizza-personalizada.jpg", alt:"Caixa de pizza preta e amarela personalizada para uma pizzaria"},
+  {id:"bolo", nome:"Caixa para bolo", cat:"confeitaria", cats:["confeitaria"], desc:"Seu bolo inteiro até o cliente", img:"img/caixa-bolo.jpg", alt:"Caixa de papelão para bolo aberta com um bolo de chocolate"},
+  {id:"maleta", nome:"Caixa tipo maleta", cat:"protecao", cats:["protecao"], desc:"Prática para guardar e transportar", img:"img/caixa-maleta.jpg", alt:"Entregador carregando uma caixa maleta de papelão em um caminhão"},
+  {id:"sob-medida", nome:"Embalagem sob medida", cat:"personalizadas", cats:["personalizadas"], desc:"No tamanho exato do seu produto", img:"img/sob-medida.jpg", alt:"Caixa com berço interno sob medida acomodando produtos"},
+  {id:"pizza-lam", nome:"Caixa de pizza com fundo laminado", cat:"pizza", cats:["pizza"], desc:"Fundo laminado para o delivery", ilu:"laminada"},
+  {id:"salgados", nome:"Caixa para salgados", cat:"confeitaria", cats:["confeitaria"], desc:"Para festas, kits e encomendas", ilu:"salgados"},
+  {id:"bolha", nome:"Plástico-bolha", cat:"protecao", cats:["protecao"], desc:"Proteção contra impacto no transporte", ilu:"bolha"},
+  {id:"stretch", nome:"Filme stretch", cat:"protecao", cats:["protecao"], desc:"Agrupa e protege suas cargas", ilu:"stretch"}
+];
+var CURTO = {pizza:"Pizza", confeitaria:"Confeitaria", protecao:"Proteção", personalizadas:"Personalizadas"};
+var NOME_CAT = {}; CATS.forEach(function(c){ NOME_CAT[c.id] = c.nome; });
+
+var TIPOS = [
+  {id:"pizza", nome:"Pizza", msg:"caixa de pizza", W:230, D:230, H:46},
+  {id:"bolo", nome:"Bolo", msg:"caixa para bolo", W:180, D:180, H:160},
+  {id:"salgados", nome:"Salgados", msg:"caixa para salgados", W:220, D:150, H:84},
+  {id:"maleta", nome:"Maleta", msg:"caixa tipo maleta", W:220, D:100, H:150}
+];
+var CORES = [
+  {nome:"Preto", hex:"#151515"}, {nome:"Vermelho", hex:"#D62B29"}, {nome:"Amarelo", hex:"#F3C51B"},
+  {nome:"Branco", hex:"#FFFFFF"}, {nome:"Azul", hex:"#1F4E9C"}, {nome:"Verde", hex:"#1E7A46"},
+  {nome:"Laranja", hex:"#E8711F"}, {nome:"Marrom", hex:"#6B3E22"}
+];
+
+/* ---------- estado (só na memória da página) ---------- */
+var estado = { itens: [], sim: null };
+var sim = { tipo: "pizza", nome: "Sua Pizzaria", cores: [0, 1] };
+
+function $(id){ return document.getElementById(id); }
+function esc(s){ return String(s).replace(/[&<>"']/g, function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]; }); }
+function prod(id){ for (var i=0;i<PRODUTOS.length;i++) if (PRODUTOS[i].id===id) return PRODUTOS[i]; }
+function midia(p){ return p.img ? '<img src="'+p.img+'" alt="'+esc(p.alt)+'" loading="lazy" width="800" height="800">' : ILU[p.ilu].replace("<svg ", '<svg role="img" aria-label="Ilustração: '+esc(p.nome)+'" '); }
+
+/* ---------- vitrine ---------- */
+var filtro = "todas";
+function montarAbas(){
+  $("abas").innerHTML = CATS.map(function(c){
+    return '<button class="aba" data-cat="'+c.id+'" aria-pressed="'+(c.id===filtro)+'">'+c.nome+'</button>';
+  }).join("");
+}
+function montarGrade(){
+  $("grade").innerHTML = PRODUTOS.map(function(p){
+    return '<article class="card" data-id="'+p.id+'"><div class="foto">'+midia(p)+'</div><div class="info">'+
+      '<span class="cat">'+CURTO[p.cat]+'</span><h3>'+p.nome+'</h3><p>'+p.desc+'</p>'+
+      (p.sim ? '<a class="ver-marca" href="#simulador" data-sim="'+p.sim+'">Simular marca →</a>' : '')+
+      '<button class="btn incluir" data-id="'+p.id+'" aria-pressed="false">Incluir na consulta</button></div></article>';
+  }).join("");
+  atualizarBotoes();
+}
+function aplicarFiltro(){
+  [].forEach.call(document.querySelectorAll(".card"), function(el){
+    var p = prod(el.dataset.id);
+    el.hidden = !(filtro==="todas" || p.cats.indexOf(filtro) > -1);
+  });
+  [].forEach.call(document.querySelectorAll(".aba"), function(b){ b.setAttribute("aria-pressed", b.dataset.cat===filtro); });
+}
+$("abas").addEventListener("click", function(e){
+  var b = e.target.closest(".aba"); if (!b) return;
+  filtro = b.dataset.cat; aplicarFiltro();
+  var top = $("vitrine").getBoundingClientRect().top + window.scrollY;
+  if (window.scrollY > top + 140) window.scrollTo({top: top + 60, behavior: "smooth"});
+});
+$("grade").addEventListener("click", function(e){
+  var v = e.target.closest("[data-sim]");
+  if (v) { escolherTipo(v.dataset.sim); return; }
+  var b = e.target.closest(".incluir"); if (!b) return;
+  var id = b.dataset.id, i = idx(id);
+  if (i > -1) { estado.itens.splice(i,1); }
+  else { estado.itens.push({id:id, qtd:""}); avisar(prod(id).nome + " incluída"); }
+  atualizarTudo();
+});
+function idx(id){ for (var i=0;i<estado.itens.length;i++) if (estado.itens[i].id===id) return i; return -1; }
+function atualizarBotoes(){
+  [].forEach.call(document.querySelectorAll(".incluir"), function(b){
+    var on = idx(b.dataset.id) > -1;
+    b.setAttribute("aria-pressed", on);
+    b.textContent = on ? "✓ Incluída" : "Incluir na consulta";
+  });
+}
+
+/* ---------- simulador ---------- */
+function montarControles(){
+  $("tipos").innerHTML = TIPOS.map(function(t){ return '<button class="tipo" data-tipo="'+t.id+'" aria-pressed="'+(t.id===sim.tipo)+'">'+t.nome+'</button>'; }).join("");
+  $("cores").innerHTML = CORES.map(function(c,i){ return '<button class="cor" data-i="'+i+'" style="background:'+c.hex+'" aria-label="'+c.nome+'"></button>'; }).join("") +
+    '<button class="sem-imp" id="semImp">Sem impressão</button>';
+  marcarCores();
+}
+function marcarCores(){
+  [].forEach.call(document.querySelectorAll(".cor"), function(b){
+    var pos = sim.cores.indexOf(+b.dataset.i);
+    b.setAttribute("aria-pressed", pos > -1);
+    if (pos > -1) b.dataset.n = pos+1; else delete b.dataset.n;
+  });
+  $("qtdCores").textContent = "(" + sim.cores.length + " de 3)";
+  $("semImp").setAttribute("aria-pressed", sim.cores.length===0);
+}
+$("tipos").addEventListener("click", function(e){
+  var b = e.target.closest(".tipo"); if (!b) return;
+  escolherTipo(b.dataset.tipo);
+});
+function escolherTipo(id){
+  sim.tipo = id;
+  [].forEach.call(document.querySelectorAll(".tipo"), function(x){ x.setAttribute("aria-pressed", x.dataset.tipo===id); });
+  desenhar();
+}
+$("cores").addEventListener("click", function(e){
+  if (e.target.closest("#semImp")) { sim.cores = []; marcarCores(); desenhar(); return; }
+  var b = e.target.closest(".cor"); if (!b) return;
+  var i = +b.dataset.i, pos = sim.cores.indexOf(i);
+  if (pos > -1) sim.cores.splice(pos,1);
+  else if (sim.cores.length < 3) sim.cores.push(i);
+  else { $("dicaCores").textContent = "Máximo de 3 cores. Toque numa cor marcada para trocar."; return; }
+  $("dicaCores").textContent = "A primeira cor vai no nome, a segunda na faixa e a terceira no selo.";
+  marcarCores(); desenhar();
+});
+$("nomeMarca").addEventListener("input", function(){ sim.nome = this.value; desenhar(); });
+
+function pt(p){ return p[0].toFixed(1)+","+p[1].toFixed(1); }
+function add(a,b,k){ k = k===undefined?1:k; return [a[0]+b[0]*k, a[1]+b[1]*k]; }
+/* desenha a caixa em perspectiva isométrica: tampa + dois lados */
+function svgCaixa(tipoId, nome, cores, logo){
+  var t = TIPOS.filter(function(x){ return x.id===tipoId; })[0];
+  var c30 = Math.cos(Math.PI/6), s30 = 0.5;
+  var W=t.W, D=t.D, H=t.H;
+  var largura = c30*(W+D), altura = s30*(W+D) + H + (t.id==="maleta"?34:0);
+  var esc_ = Math.min(330/largura, 250/altura);
+  W*=esc_; D*=esc_; H*=esc_;
+  var r = [c30*W, -s30*W], l = [-c30*D, -s30*D], u = [0, -H];
+  var cx = 200 + (c30*D - c30*W)/2, baseY = 160 + (s30*(W+D) + H)/2 + (t.id==="maleta"?17:0);
+  var Pn = [cx, baseY], N = add(Pn,u);
+  var kraftTop="#D9B98F", kraftR="#C29E70", kraftL="#AE8A5E", linha="#151515";
+  var cor = function(k){ return cores[k]!==undefined ? CORES[cores[k]].hex : null; };
+  var s = '';
+  var sombra = [Pn, add(Pn,r), add(add(Pn,r),l), add(Pn,l)].map(function(q){ return [q[0]+10, q[1]+8]; });
+  s += '<path d="M'+sombra.map(pt).join(" L")+'Z" fill="#000" opacity=".45"/>';
+  // lado esquerdo e direito
+  s += '<path d="M'+pt(N)+' L'+pt(add(N,l))+' L'+pt(add(Pn,l))+' L'+pt(Pn)+'Z" fill="'+kraftL+'" stroke="'+linha+'" stroke-width="1.5" stroke-linejoin="round"/>';
+  s += '<path d="M'+pt(N)+' L'+pt(add(N,r))+' L'+pt(add(Pn,r))+' L'+pt(Pn)+'Z" fill="'+kraftR+'" stroke="'+linha+'" stroke-width="1.5" stroke-linejoin="round"/>';
+  // faixa nas laterais (cor 2)
+  if (cor(1)) {
+    var f1 = Math.max(H*0.18, 6), off = H*0.55;
+    var a = add(Pn,u,off/H), b = add(a,[0,-f1]);
+    s += '<path d="M'+pt(a)+' L'+pt(add(a,r))+' L'+pt(add(b,r))+' L'+pt(b)+'Z" fill="'+cor(1)+'" opacity=".95"/>';
+    s += '<path d="M'+pt(a)+' L'+pt(add(a,l))+' L'+pt(add(b,l))+' L'+pt(b)+'Z" fill="'+cor(1)+'" opacity=".8"/>';
+  }
+  // tampa
+  var tampa = [N, add(N,r), add(add(N,r),l), add(N,l)];
+  s += '<path d="M'+tampa.map(pt).join(" L")+'Z" fill="'+kraftTop+'" stroke="'+linha+'" stroke-width="1.5" stroke-linejoin="round"/>';
+  // aba da tampa (linha de vinco)
+  var vinco = 0.06;
+  s += '<path d="M'+pt(add(N,l,vinco))+' L'+pt(add(add(N,l,vinco),r))+'" stroke="'+linha+'" stroke-width="1" opacity=".35"/>';
+  // conteúdo impresso no plano da tampa: x ao longo de r, y de trás (0) para frente (D)
+  var m = [r[0]/W, r[1]/W, -l[0]/D, -l[1]/D, N[0]+l[0], N[1]+l[1]].map(function(v){ return v.toFixed(4); }).join(" ");
+  var g = '';
+  if (cor(1)) g += '<rect x="0" y="'+(D*0.8).toFixed(1)+'" width="'+W.toFixed(1)+'" height="'+(D*0.08).toFixed(1)+'" fill="'+cor(1)+'"/>';
+  if (cor(2)) {
+    var rr = Math.min(W,D)*0.1;
+    g += '<circle cx="'+(W-rr*1.6).toFixed(1)+'" cy="'+(rr*1.7).toFixed(1)+'" r="'+rr.toFixed(1)+'" fill="'+cor(2)+'"/>';
+  }
+  var txt = (nome || "").trim() || "Sua Marca";
+  var claro = cores[0]===2 || cores[0]===3 || cores[0]===6;
+  var contorno = claro ? ' stroke="#151515" stroke-width="FS" paint-order="stroke" stroke-linejoin="round"' : '';
+  function texto(x, y, fs){ return '<text x="'+x.toFixed(1)+'" y="'+y.toFixed(1)+'" text-anchor="middle" dominant-baseline="middle" font-family="Archivo, Arial Black, Arial, sans-serif" font-weight="800" font-size="'+fs.toFixed(1)+'" fill="'+cor(0)+'"'+contorno.replace("FS",(fs*0.12).toFixed(1))+'>'+esc(txt)+'</text>'; }
+  if (t.id==="maleta") g += '<rect x="'+(W*0.32).toFixed(1)+'" y="'+(D*0.36).toFixed(1)+'" width="'+(W*0.36).toFixed(1)+'" height="'+(D*0.26).toFixed(1)+'" rx="'+(D*0.13).toFixed(1)+'" fill="#151515" opacity=".75"/>';
+  else if (logo) {
+    var lw = W*0.62, lh = D*0.5;
+    g += '<image href="'+logo.src+'" x="'+((W-lw)/2).toFixed(1)+'" y="'+(D*0.18).toFixed(1)+'" width="'+lw.toFixed(1)+'" height="'+lh.toFixed(1)+'" preserveAspectRatio="xMidYMid meet"/>';
+  }
+  else if (cor(0)) g += texto(W/2, D*0.5, Math.min(D*0.26, (W*0.9)/Math.max(txt.length*0.58, 1)));
+  s += '<g transform="matrix('+m+')">'+g+'</g>';
+  // nome também na lateral das caixas altas
+  if (logo && t.id!=="pizza") {
+    var mr2 = [r[0]/W, r[1]/W, 0, 1, N[0], N[1]].map(function(v){ return v.toFixed(4); }).join(" ");
+    s += '<g transform="matrix('+mr2+')"><image href="'+logo.src+'" x="'+(W*0.2).toFixed(1)+'" y="'+(H*0.56).toFixed(1)+'" width="'+(W*0.6).toFixed(1)+'" height="'+(H*0.36).toFixed(1)+'" preserveAspectRatio="xMidYMid meet"/></g>';
+  } else if (cor(0) && t.id!=="pizza") {
+    var mr = [r[0]/W, r[1]/W, 0, 1, N[0], N[1]].map(function(v){ return v.toFixed(4); }).join(" ");
+    s += '<g transform="matrix('+mr+')">'+texto(W/2, H*0.74, Math.min(H*0.2, (W*0.84)/Math.max(txt.length*0.58, 1)))+'</g>';
+  }
+  // respiros da caixa de pizza
+  if (t.id==="pizza") {
+    for (var k=0;k<3;k++){ var p0 = add(add(Pn,u,0.5), r, 0.3+k*0.18); s += '<path d="M'+pt(p0)+' L'+pt(add(p0,r,0.08))+'" stroke="'+linha+'" stroke-width="2.5" stroke-linecap="round" opacity=".5"/>'; }
+  }
+  return s;
+}
+function desenhar(){ $("caixaSvg").innerHTML = svgCaixa(sim.tipo, sim.nome, sim.cores, sim.logo); }
+
+/* logo do visitante: lida e reduzida no próprio navegador, nunca enviada */
+$("logoArq").addEventListener("change", function(){
+  var f = this.files && this.files[0]; if (!f) return;
+  if (!/^image\/(png|jpeg|webp|svg\+xml)$/.test(f.type) || f.size > 8e6) { $("logoTxt").textContent = "Use PNG, JPG, WEBP ou SVG"; return; }
+  var leitor = new FileReader();
+  leitor.onload = function(){
+    var img = new Image();
+    img.onload = function(){
+      var k = Math.min(1, 500/Math.max(img.width||500, img.height||500));
+      var c = document.createElement("canvas"); c.width = Math.round((img.width||500)*k); c.height = Math.round((img.height||500)*k);
+      c.getContext("2d").drawImage(img, 0, 0, c.width, c.height);
+      sim.logo = { src: c.toDataURL("image/png"), nome: f.name };
+      $("logoMini").src = sim.logo.src; $("logoPrev").classList.add("on");
+      $("logoTxt").textContent = "Trocar logo";
+      desenhar();
+    };
+    img.src = leitor.result;
+  };
+  leitor.readAsDataURL(f);
+  this.value = "";
+});
+$("logoRem").addEventListener("click", function(){
+  sim.logo = null; $("logoPrev").classList.remove("on"); $("logoTxt").textContent = "Usar minha logo"; desenhar();
+});
+
+$("incluirSim").addEventListener("click", function(){
+  estado.sim = { tipo: sim.tipo, nome: (sim.nome||"").trim() || "Sua Marca", cores: sim.cores.slice(), logo: sim.logo };
+  atualizarTudo();
+  abrirPainel();
+});
+
+/* ---------- painel da consulta ---------- */
+function totalItens(){ return estado.itens.length + (estado.sim ? 1 : 0); }
+function renderPainel(){
+  var html = "";
+  if (!estado.itens.length) html = '<p class="vazio">Nenhuma embalagem incluída ainda. Você pode enviar assim mesmo e pedir orientação, ou <a href="#vitrine" data-fecha>escolher na vitrine</a>.</p>';
+  else html = '<ul class="itens">' + estado.itens.map(function(it){
+    var p = prod(it.id);
+    return '<li class="item"><div class="mini">'+midia(p)+'</div><div><div class="nome">'+p.nome+'</div>'+
+      '<label>Quantidade <input inputmode="numeric" data-qtd="'+p.id+'" value="'+esc(it.qtd)+'" placeholder="a definir" aria-label="Quantidade de '+esc(p.nome)+'"></label></div>'+
+      '<button class="remover" data-rem="'+p.id+'" aria-label="Remover '+esc(p.nome)+'"><svg width="20" height="20"><use href="#i-lixo"/></svg></button></li>';
+  }).join("") + '</ul>';
+  $("listaWrap").innerHTML = html;
+  if (estado.sim) {
+    var t = TIPOS.filter(function(x){ return x.id===estado.sim.tipo; })[0];
+    $("simWrap").innerHTML = '<p class="leg" style="font-size:14px;font-weight:600;margin-bottom:8px">Sua simulação</p><div class="simcard"><svg viewBox="40 20 320 280" aria-hidden="true">'+svgCaixa(estado.sim.tipo, estado.sim.nome, estado.sim.cores, estado.sim.logo)+'</svg>'+
+      '<div><div class="nome">'+esc(estado.sim.nome)+'</div><small>'+t.nome+' · '+descCores(estado.sim.cores)+(estado.sim.logo?' · com logo':'')+'</small></div>'+
+      '<button class="remover" data-remsim aria-label="Remover simulação"><svg width="20" height="20"><use href="#i-lixo"/></svg></button></div>';
+  } else $("simWrap").innerHTML = "";
+}
+function descCores(cs){ return cs.length ? cs.length + (cs.length>1?" cores: ":" cor: ") + cs.map(function(i){ return CORES[i].nome; }).join(", ") : "sem impressão"; }
+$("painel").addEventListener("click", function(e){
+  var r = e.target.closest("[data-rem]");
+  if (r) { estado.itens.splice(idx(r.dataset.rem),1); atualizarTudo(); return; }
+  if (e.target.closest("[data-remsim]")) { estado.sim = null; atualizarTudo(); return; }
+  if (e.target.closest("[data-fecha]")) fecharPainel();
+});
+$("painel").addEventListener("input", function(e){
+  var q = e.target.dataset && e.target.dataset.qtd;
+  if (q) { estado.itens[idx(q)].qtd = e.target.value.replace(/[^\d.]/g, "").slice(0,7); e.target.value = estado.itens[idx(q)].qtd; }
+});
+$("semMedidas").addEventListener("change", function(){ $("medidas").disabled = this.checked; if (this.checked) $("medidas").value = ""; });
+
+function atualizarTudo(){
+  atualizarBotoes(); renderPainel();
+  var n = totalItens(), c = $("contador");
+  c.textContent = n; c.classList.toggle("zero", n===0);
+  c.setAttribute("aria-label", n + (n===1?" item":" itens"));
+  c.classList.remove("pulse"); void c.offsetWidth; c.classList.add("pulse");
+}
+
+var ultimoFoco = null;
+function abrirPainel(){
+  ultimoFoco = document.activeElement;
+  esconderToast();
+  $("painel").classList.add("on"); $("veu").classList.add("on");
+  $("painel").setAttribute("aria-hidden","false");
+  document.body.style.overflow = "hidden";
+  setTimeout(function(){ $("fecharPainel").focus(); }, 50);
+}
+function fecharPainel(){
+  $("painel").classList.remove("on"); $("veu").classList.remove("on");
+  $("painel").setAttribute("aria-hidden","true");
+  document.body.style.overflow = "";
+  if (ultimoFoco && ultimoFoco.focus) ultimoFoco.focus();
+}
+function painelAberto(){ return $("painel").classList.contains("on"); }
+$("abrirPainel").addEventListener("click", abrirPainel);
+[].forEach.call(document.querySelectorAll("[data-abrir]"), function(b){ b.addEventListener("click", abrirPainel); });
+$("fecharPainel").addEventListener("click", fecharPainel);
+$("veu").addEventListener("click", fecharPainel);
+document.addEventListener("keydown", function(e){ if (e.key==="Escape" && painelAberto()) fecharPainel(); });
+
+/* aviso de item incluído (nunca com o painel aberto) */
+var tt;
+function avisar(msg){
+  if (painelAberto()) return;
+  $("toastTxt").textContent = msg; $("toast").classList.add("on");
+  clearTimeout(tt); tt = setTimeout(esconderToast, 3200);
+}
+function esconderToast(){ $("toast").classList.remove("on"); }
+$("toastVer").addEventListener("click", abrirPainel);
+
+/* ---------- mensagem do WhatsApp ---------- */
+function montarMensagem(){
+  var linhas = ["Olá, Embala Forte! Vi a prévia e gostaria de consultar:"];
+  if (estado.itens.length) estado.itens.forEach(function(it){
+    linhas.push("📦 " + prod(it.id).nome + ". Quantidade desejada: " + (it.qtd ? it.qtd : "a definir"));
+  });
+  else linhas.push("📦 Ainda estou escolhendo a embalagem e gostaria de orientação.");
+  var med = $("medidas").value.trim();
+  linhas.push("Medidas informadas: " + ($("semMedidas").checked || !med ? "preciso de orientação" : med));
+  if (estado.sim) {
+    var t = TIPOS.filter(function(x){ return x.id===estado.sim.tipo; })[0];
+    linhas.push(estado.sim.cores.length
+      ? "Personalização: até três cores. Simulei uma " + t.msg + " com o nome “" + estado.sim.nome + "” (" + descCores(estado.sim.cores) + ")."
+      : "Personalização: sem impressão (" + t.msg + " lisa).");
+    if (estado.sim.logo) linhas.push("Tenho logo e posso enviar o arquivo por aqui.");
+  } else linhas.push("Personalização: a definir (sem impressão ou até três cores)");
+  var rec = document.querySelector('input[name="rec"]:checked').value;
+  linhas.push("Preferência: " + (rec==="retirada" ? "retirada" : rec==="entrega" ? "entrega" : "retirada/entrega a consultar"));
+  linhas.push("Podem confirmar condições e orçamento?");
+  return linhas.join("\n");
+}
+$("enviarWa").addEventListener("click", function(){
+  window.open("https://wa.me/" + WA + "?text=" + encodeURIComponent(montarMensagem()), "_blank", "noopener");
+});
+
+montarAbas(); montarGrade(); montarControles(); desenhar(); renderPainel();
+})();
+</script>
+</body>
+</html>
